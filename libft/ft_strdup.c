@@ -1,14 +1,28 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lyie-xua <lyie-xua@student.42kl.edu.my>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/01/16 14:46:36 by lyie-xua          #+#    #+#             */
+/*   Updated: 2023/01/16 15:00:01 by lyie-xua         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 char	*ft_strdup(const char *s1)
 {
-	int	i;
+	int		i;
 	char	*dest;
 
 	i = 0;
 	dest = (char *)malloc((ft_strlen(s1) + 1) * sizeof(char))
-	if (!dest)
+	{
+		if (!dest)
 		return (NULL);
+	}
 	while (s1[i] != '\0')
 	{
 		dest[i] = s1[i];

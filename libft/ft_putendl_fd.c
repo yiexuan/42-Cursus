@@ -1,26 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lyie-xua <lyie-xua@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/16 14:42:28 by lyie-xua          #+#    #+#             */
-/*   Updated: 2023/01/16 14:42:30 by lyie-xua         ###   ########.fr       */
+/*   Created: 2023/01/16 18:51:20 by lyie-xua          #+#    #+#             */
+/*   Updated: 2023/01/16 19:06:55 by lyie-xua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *s, int c, size_t length)
+void	ft_putendl_fd(char *s, int fd)
 {
-	char	*p;
-
-	p = (char *)s;
-	while (length > 0)
-	{
-		p[length - 1] = c;
-		length--;
-	}
-	return (s);
+	ft_putstr_fd(s, fd);
+	ft_putchar_fd('\n', fd);
 }
