@@ -6,7 +6,7 @@
 /*   By: lyie-xua <lyie-xua@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/16 14:46:36 by lyie-xua          #+#    #+#             */
-/*   Updated: 2023/01/16 15:00:01 by lyie-xua         ###   ########.fr       */
+/*   Updated: 2023/01/18 14:08:32 by lyie-xua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@ char	*ft_strdup(const char *s1)
 	char	*dest;
 
 	i = 0;
-	dest = (char *)malloc((ft_strlen(s1) + 1) * sizeof(char))
+	dest = (char *)malloc((ft_strlen(s1) + 1) * sizeof(char));
 	{
 		if (!dest)
-		return (NULL);
+			return (NULL);
 	}
 	while (s1[i] != '\0')
 	{

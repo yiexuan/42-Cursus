@@ -6,7 +6,7 @@
 /*   By: lyie-xua <lyie-xua@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/16 18:30:50 by lyie-xua          #+#    #+#             */
-/*   Updated: 2023/01/16 18:47:44 by lyie-xua         ###   ########.fr       */
+/*   Updated: 2023/01/18 17:27:09 by lyie-xua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
+	if (!s)
+		return ;
 	while (*s != '\0')
 	{
 		ft_putchar_fd(*s, fd);

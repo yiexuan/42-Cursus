@@ -6,7 +6,7 @@
 /*   By: lyie-xua <lyie-xua@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/16 14:46:21 by lyie-xua          #+#    #+#             */
-/*   Updated: 2023/01/16 14:46:23 by lyie-xua         ###   ########.fr       */
+/*   Updated: 2023/01/18 17:11:13 by lyie-xua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_atoi(const char *str)
 	result = 0;
 	while ((str[i] >= '\t' && str[i] <= '\r') || (str[i] == ' '))
 		i++;
-	while (str[i] == '+' || str[i] == '-')
+	if (str[i] == '+' || str[i] == '-')
 	{
 		if (str[i] == '-')
 			sign *= -1;
@@ -31,7 +31,7 @@ int	ft_atoi(const char *str)
 	}
 	while (str[i] >= '0' && str[i] <= '9')
 	{
-		result = (str[i] - '0') + (result * 10);
+		result = (str[i] - '0') + result * 10;
 		i++;
 	}
 	return (result * sign);

@@ -6,13 +6,13 @@
 /*   By: lyie-xua <lyie-xua@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/16 14:46:55 by lyie-xua          #+#    #+#             */
-/*   Updated: 2023/01/16 15:01:32 by lyie-xua         ###   ########.fr       */
+/*   Updated: 2023/01/18 13:00:49 by lyie-xua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*str;
 

@@ -6,7 +6,7 @@
 /*   By: lyie-xua <lyie-xua@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/16 14:43:30 by lyie-xua          #+#    #+#             */
-/*   Updated: 2023/01/16 14:56:39 by lyie-xua         ###   ########.fr       */
+/*   Updated: 2023/01/18 18:08:08 by lyie-xua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	i = 0;
 	d = (char *)dest;
 	s = (char *)src;
+	if (!(src) && !(dest))
+		return (NULL);
 	while (i < n)
 	{
 		d[i] = s[i];
